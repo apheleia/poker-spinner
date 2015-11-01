@@ -1,6 +1,10 @@
 # Poker Spinner
 A simulator for the poker "Spin & Go" format.
 
+It runs `x` tournaments per run and `y` runs. So a total of `x * y` tournaments.
+Each run has a certain return of investemnt (ROI) over all tournaments in that run.
+The ROIs of all runs are grouped and printed when the simulation is done.
+
 ## Usage
 - Copy `config.json.example` to `config.json`
 - Set your parameters in `config.json`
