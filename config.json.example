@@ -1,0 +1,42 @@
+{
+	"tournaments": 10000,
+	"rounding": 1,
+	"denominator": 1000000,
+	"payouts": [
+		{
+			"probability": 3,
+			"win": 10000,
+			"lose": 1000
+		},
+		{
+			"probability": 50,
+			"win": 200,
+			"lose": 10
+		},
+		{
+			"probability": 100,
+			"win": 100,
+			"lose": 10
+		},
+		{
+			"probability": 500,
+			"win": 25
+		},
+		{
+			"probability": 1000,
+			"win": 10
+		},
+		{
+			"probability": 75000,
+			"win": 6
+		},
+		{
+			"probability": 200000,
+			"win": 4
+		},
+		{
+			"probability": 723347,
+			"win": 2
+		}
+	]
+}
