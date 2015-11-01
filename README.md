@@ -18,11 +18,9 @@ specified in the config).
 ## Configuration
 - `tournaments` defines the number of simulated tournaments per run.
  - The ROI per run is calculated from the total of these tournaments.
-
+- `rounding` defines the precision for the ROI outputs
+- `denominator` only exists to check the config for correctness. It has to equal the sum of all `payouts`' probabilities
 - `payouts` are all possible multipliers and their payouts.
- - The probability is given over 1,000,000. So a probability of `0` to `3` actually means `0.000003`.
- - The difference between `probabilityStart` and `probabilityEnd` is the actual probability over one million.
- - The start of one probability must be equal to the end of another probability (unless it is `0`).
- - Probabilities can not "overlap" in start to end!
+ - The probability is given over the `denominator`. So a probability of `3` actually means `3/denimonator`.
  - `win` and `lose` are the payout multipliers for winning and not winning (second and third place).
- - If `lose` is not given, they are set to `0`.
+ - If `lose` is not given, it is set to `0`.
